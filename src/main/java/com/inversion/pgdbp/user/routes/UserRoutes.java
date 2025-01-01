@@ -5,4 +5,6 @@ public class UserRoutes {
 
     public final static String CREATE = ROOT;
     public final static String GET = ROOT + "/{id}";
+    public final static String SEARCH = ROOT;
+    public final static String BY_ID = ROOT + "/{id}";
 }
