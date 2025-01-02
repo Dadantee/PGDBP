@@ -40,6 +40,11 @@ public class UserApiController {
 
     }
 
+  //  @GetMapping(UserRoutes.BY_ID)
+  //  public UserResponse byId(@PathVariable Long id) throws UserNotFoundException {
+  //      return UserResponse.of(userRepository.findById(id).orElseThrow(UserNotFoundException::new));
+ //   }
+
     @GetMapping(UserRoutes.SEARCH)
     public List<UserResponse> search(
             @RequestParam(defaultValue = "0") Integer page,
